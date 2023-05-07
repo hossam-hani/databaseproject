@@ -20,4 +20,8 @@ class Student extends Model {
         return $this->belongsToMany(Course::class);
     }
 
+    public function addresses() {
+        return $this->hasMany(Address::class);
+    }
+
 }
