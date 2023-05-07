@@ -14,6 +14,8 @@ class Student extends Model {
         'name',
         'code',
         'official_email',
+        'phone_number',
+        'email'
     ];
 
     public function courses() {
