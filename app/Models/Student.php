@@ -16,4 +16,8 @@ class Student extends Model {
         'official_email',
     ];
 
+    public function courses() {
+        return $this->belongsToMany(Course::class);
+    }
+
 }
